@@ -1,8 +1,8 @@
 {
 	"name": "vsc-memer",
-	"displayName": "comment meme maker",
+	"displayName": "meme maker",
 	"description": "make ascii base memes inside your code comments",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"keywords": [
 		"meme",
 		"maker",
@@ -53,64 +53,64 @@
 				"command": "vsc-memer.copyMeme",
 				"title": "Copy a meme selected from list to clipboard"
 			}
-		]
-	},
-	"configuration": [
-		{
-			"title": "Meme inserter",
-			"properties": {
-				"vsc-memer.contextMenu.enabled": {
-					"type": "boolean",
-					"default": true,
-					"description": "Whether to show the Insert a random meme in the editor context menu"
-				},
-				"vsc-memer.commentStyle": {
-					"type": "string",
-					"default": "line",
-					"enum": [
-						"line",
-						"block"
-					],
-					"enumDescriptions": [
-						"line comment style, like //",
-						"block comment style, like /* */"
-					],
-					"description": "Type of comment style"
-				},
-				"vsc-memer.lineComment": {
-					"type": "string",
-					"default": "//",
-					"description": "Symbol of line comments the generated meme should be wrapped in"
-				},
-				"vsc-memer.blockCommentLeft": {
-					"type": "string",
-					"default": "/*",
-					"description": "Symbol of left side of block comments the generated meme should be wrapped in"
-				},
-				"vsc-memer.blockCommentRight": {
-					"type": "string",
-					"default": "*/",
-					"description": "Symbol of right side of block comments the generated meme should be wrapped in"
+		],
+		"configuration": [
+			{
+				"title": "Meme maker",
+				"properties": {
+					"vsc-memer.contextMenu.enabled": {
+						"type": "boolean",
+						"default": true,
+						"description": "Whether to show the Insert a random meme in the editor context menu"
+					},
+					"vsc-memer.commentStyle": {
+						"type": "string",
+						"default": "line",
+						"enum": [
+							"line",
+							"block"
+						],
+						"enumDescriptions": [
+							"line comment style, like //",
+							"block comment style, like /* */"
+						],
+						"description": "Type of comment style"
+					},
+					"vsc-memer.lineComment": {
+						"type": "string",
+						"default": "//",
+						"description": "Symbol of line comments the generated meme should be wrapped in"
+					},
+					"vsc-memer.blockCommentLeft": {
+						"type": "string",
+						"default": "/*",
+						"description": "Symbol of left side of block comments the generated meme should be wrapped in"
+					},
+					"vsc-memer.blockCommentRight": {
+						"type": "string",
+						"default": "*/",
+						"description": "Symbol of right side of block comments the generated meme should be wrapped in"
+					}
 				}
 			}
-		}
-	],
-	"menus": {
-		"editor/context": [
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"command": "vsc-memer.insertRandomMeme",
+					"group": "vsc-memer",
+					"when": "config.vsc-memer.contextMenu.enabled"
+				}
+			]
+		},
+		"keybindings": [
 			{
 				"command": "vsc-memer.insertRandomMeme",
-				"group": "vsc-memer",
-				"when": "config.vsc-memer.contextMenu.enabled"
+				"key": "alt+shift+m",
+				"when": "editorTextFocus && !editorReadonly"
 			}
 		]
 	},
-	"keybindings": [
-		{
-			"command": "vsc-memer.insertRandomMeme",
-			"key": "alt+shift+m",
-			"when": "editorTextFocus && !editorReadonly"
-		}
-	],
 	"scripts": {
 		"vscode:prepublish": "yarn run package",
 		"compile": "webpack",

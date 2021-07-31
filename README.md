@@ -9,6 +9,7 @@ Memeing inside your code comments
 - ascii charters based meme templates, can be directly insert into your code as comments
 - supports any language with any comment style
 - 30+ meme templates to choose from
+- `shift+alt+m` to insert a random meme
 
 ## Requirements
 
