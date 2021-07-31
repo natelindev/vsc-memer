@@ -11,6 +11,7 @@
 		"ascii",
 		"comment"
 	],
+	"publisher": "llldar",
 	"engines": {
 		"vscode": "^1.58.0"
 	},
