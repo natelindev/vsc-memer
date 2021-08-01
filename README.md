@@ -1,10 +1,14 @@
 # Vscode comment meme maker
 
-![feature X](images/trade-offer.png)
+<img src="images/trade-offer.png" height="300">
 
 ## Features
 
 Memeing inside your code comments
+
+usage:
+
+Pressing Ctrl+Shift+P or Cmd+Shift+P on Mac and searching for 'meme'
 
 - ascii charters based meme templates, can be directly insert into your code as comments
 - supports any language with any comment style
@@ -34,6 +38,11 @@ Below are the features I'd like to implement if this gains popularity
 - [ ] Auto generate meme templates from url
 
 ## Release Notes
+
+### 0.0.3
+
+- updated memes to be much clearer
+- updated readme
 
 ### 0.0.1
 
