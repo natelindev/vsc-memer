@@ -14,7 +14,7 @@ Pressing Ctrl+Shift+P or Cmd+Shift+P on Mac and searching for 'meme'
 
 - ascii charters based meme templates, can be directly insert into your code as comments
 - supports any language with any comment style
-- 30 meme templates to choose from, more in the future
+- 30+ meme templates to choose from
 - `shift+alt+m` to insert a random meme
 
 ## Requirements
@@ -64,6 +64,7 @@ You need to know how to make dank memes
 | 27  | Stonks                           |
 | 28  | Disappointed Black Guy           |
 | 29  | Boardroom Meeting Suggestion     |
+| 30  | Write That Down                  |
 
 ## Roadmap
 

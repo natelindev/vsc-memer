@@ -31,9 +31,10 @@ function comment(text: string): string {
     return text
       .split('\n')
       .map((t) => `${lineComment} ${t}`)
-      .join(eol);
+      .join(eol)
+      .concat(eol);
   } else if (commentStyle === 'block') {
-    return `${blockCommentLeft}${eol}${text}${eol}${blockCommentRight}`;
+    return `${blockCommentLeft}${eol}${text}${eol}${blockCommentRight}${eol}`;
   }
   vscode.window.showErrorMessage('Invalid comment style configured');
   return text;
