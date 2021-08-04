@@ -2,7 +2,7 @@
 	"name": "vsc-memer",
 	"displayName": "meme maker",
 	"description": "make ascii base memes inside your code comments",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"keywords": [
 		"meme",
 		"maker",
