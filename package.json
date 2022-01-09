@@ -11,10 +11,10 @@
 		"ascii",
 		"comment"
 	],
-	"publisher": "llldar",
+	"publisher": "natelindev",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/llldar/vsc-memer.git"
+		"url": "https://github.com/natelindev/vsc-memer.git"
 	},
 	"engines": {
 		"vscode": "^1.58.0"
@@ -26,7 +26,7 @@
 	"icon": "images/meme.png",
 	"author": {
 		"name": "Nathaniel",
-		"url": "https://github.com/llldar"
+		"url": "https://github.com/natelindev"
 	},
 	"activationEvents": [
 		"onCommand:vsc-memer.insertRandomMeme",
